@@ -1,5 +1,7 @@
 # Alpha-Beta-Pruning: derselbe Wert, viel weniger Suche
 
+**[→ Demo live ausprobieren](https://sebastianhanisch-alpha-beta-demo.streamlit.app/)**
+
 Kind-Stück von **[minimax-demo](https://github.com/sebastian-hanisch/minimax-demo)** (Wurzel der
 Adversarische-Suche-Linie). Vehikel: dasselbe Mini-Vier-Gewinnt, dasselbe Brettmodell (`ab_game.py` ist eine
 wortgleiche Kopie von `mm_game.py`).
