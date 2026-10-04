@@ -14,7 +14,7 @@ PRESETS = {
 PRESET_HELP = {
     "Naiv (4×3)": "Standardgröße dieser Linie (wie minimax-demo), ohne Heuristik.",
     "Mitte zuerst (4×3)": "Dieselbe Größe, echte Heuristik statt naiver Reihenfolge.",
-    "Naiv auf 4×4": "Das Brett, das in minimax-demo noch 335s brauchte - hier in Sekundenbruchteilen.",
+    "Naiv auf 4×4": "Das Brett, das in minimax-demo noch 334s brauchte - hier in Sekundenbruchteilen.",
 }
 
 _DEFAULTS = {"board_index": DEFAULT_BOARD_INDEX, "order": ORDER_NAIVE, "moves": []}

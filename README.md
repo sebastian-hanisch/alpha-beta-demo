@@ -43,7 +43,7 @@ Alle Werte mit der tatsächlich ausgelieferten Suche gemessen (`tests/test_claim
 
 - **Pruning wirkt gewaltig, schon ohne jedes Vorwissen.** Auf 4×4 braucht die volle Minimax-Suche aus
   minimax-demo 83.078.201 Knoten (334 s) – Alpha-Beta mit naiver Reihenfolge nur 43.827 Knoten (0,15 s):
-  das ~1.895-fache weniger. Dadurch werden 4×4, 5×4 und 3×5 hier live wählbar, obwohl sie im Elternstück
+  das ~1.896-fache weniger. Dadurch werden 4×4, 5×4 und 3×5 hier live wählbar, obwohl sie im Elternstück
   unbrauchbar langsam waren.
 - **Auf 3×3 macht die Reihenfolge keinen Unterschied.** Bei perfektem Spiel ziehen dort ALLE
   Eröffnungszüge remis (bereits in minimax-demo gemessen) – jede Sortierung ist auf lauter gleich guten
@@ -78,7 +78,7 @@ selbst genutzt (kein zusätzlicher Suchaufwand), ihre Kosten aber separat ausgew
 
 ## Tests
 
-47 Tests (`pytest tests/ -v`): Brettmechanik, Suchalgorithmus (Kreuzprobe gegen minimax-demo-Werte,
+49 Tests (`pytest tests/ -v`): Brettmechanik, Suchalgorithmus (Kreuzprobe gegen minimax-demo-Werte,
 Reihenfolge-Effekt), PDF-Export, Visualisierung, Streamlit-Rauchtests (AppTest: jede Brettgröße/Reihenfolge,
 Orakel-Clamp beim Reihenfolgewechsel, Permalink-Rundlauf). Zwei echte Bugs beim Bau gefunden+gefixt: ein
 root-only-Orakel wäre auf den einzigen bezahlbaren Brettgrößen wirkungslos gewesen (siehe oben), und der
@@ -113,3 +113,7 @@ pytest tests/ -v
 ```
 
 Gebaut mit Streamlit, Plotly und fpdf2.
+
+---
+
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Adversarische Suche: Minimax bis Selbstspiel](https://sebastianhanisch.net/konzepte-adversarische-suche.html).
